@@ -1,0 +1,7 @@
+<h1>{{title}}</h1>
+<app-child [item]="data"></app-child>
+<button (click)="updateChild()">Update Child Component</button>
+<h1>{{title1}}</h1>
+<ul *ngfor="let user of userDetails">
+    <app-user-details [item1]="user"></app-user-details>
+</ul>
