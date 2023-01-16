@@ -1,3 +1,4 @@
+import { LowerCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,8 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'TRV';
-  getVal(item:any){
-    console.warn(item)
+  title = 'pipes';
+  today=Date();
+
+  capString(item:string){
+    return item.toUpperCase();
   }
+// JSON object
+  user={name:'Lopa',age:27}
+
+
 }

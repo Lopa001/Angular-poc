@@ -1,0 +1,17 @@
+<h1>{{title| uppercase}}</h1>
+<h1>{{title| lowercase}}</h1>
+<h1>{{title}}</h1>
+<h2>{{today |date: 'fullDate'}}</h2>
+
+<h3>{{capString(title)}}</h3>
+<!-- Advance pipes -->
+<h1>{{title |slice:2:4|uppercase}}</h1>
+
+<h3>{{user|json |uppercase}}</h3>
+<h2>{{000002000.3123|number:'2.2-3'}}</h2>
+<h2>{{20|currency:'INR'}}</h2>
+<h2>{{20|currency:'USD'}}</h2>
+<h2>{{20|currency:'GBP'}}</h2>
+<h1>{{"hello how are you"|titlecase}}</h1>
+<!--Custom Pipes-->
+<h1>{{20|usdInr:72}}</h1>
